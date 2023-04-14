@@ -7,3 +7,12 @@ const img = document.querySelectorAll('img');
 
 img.forEach(i => i.addEventListener('mouseover', (event) => {i.src = ''}));
 img.forEach(i => i.addEventListener('mouseout', (event) => {i.src = 'https://picsum.photos/200/300'}));
+
+const destToggle = document.querySelectorAll('div.destination');
+console.log(destToggle);
+destToggle.forEach( x =>  x.addEventListener('click', (event) => {
+    x.classList.toggle('destination');
+    
+}));
+
+    
