@@ -3,4 +3,6 @@ const navlinks = document.querySelectorAll('.nav-link');
 navlinks.forEach( a => a.addEventListener('mouseover', (event) => {a.style = 'color: blue'}));
 
 const firstPar = Array.from(document.getElementsByTagName('p'), p => p.textContent = "I Changed all the text content with one line");
-console.log(firstPar);
+const img = document.querySelectorAll('img');
+
+img.forEach(i => i.addEventListener('mouseover', (event) => {i.src = null}));
