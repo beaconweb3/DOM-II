@@ -12,7 +12,11 @@ const destToggle = document.querySelectorAll('div.destination');
 console.log(destToggle);
 destToggle.forEach( x =>  x.addEventListener('click', (event) => {
     x.classList.toggle('destination');
-    
 }));
 
+destToggle.forEach( x =>  x.addEventListener('click', (event) => {
+    let warn = "preventDefault() won't let you click this!<br>";
+    x.innerHTML += warn;
+    event.preventDefault();
+}));
     
